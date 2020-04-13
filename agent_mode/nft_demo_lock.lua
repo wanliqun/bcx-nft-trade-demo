@@ -207,6 +207,10 @@ function buy_nft_item(nft_asset_id)
     chainhelper:write_chain()
 end
 
+function test_nft_transfer(to, nft_asset_id)
+    transfer_nht_from_caller(to, nft_asset_id, true)
+end
+
 -- 从例如 '2019-09-12T05:23:30' 的日期字符串获取日期时间对象
 func_datetime_from_string=function(dt_str)
     local y, m, d, h, mt, s = string.match(dt_str, '(%d%d%d%d)-(%d%d)-(%d%d)T(%d%d):(%d%d):(%d%d)$')
