@@ -208,7 +208,7 @@ function buy_nft_item(nft_asset_id)
 end
 
 function test_nft_transfer(to, nft_asset_id)
-    transfer_nht_from_caller(to, nft_asset_id, true)
+    chainhelper:transfer_nht_from_caller(to, nft_asset_id, true)
 end
 
 -- 从例如 '2019-09-12T05:23:30' 的日期字符串获取日期时间对象
